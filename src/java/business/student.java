@@ -7,13 +7,24 @@ import java.time.LocalDate;
 public class student {
     private int studentId;
     private String name;
-    private LocalDate BirthDaY;
+    private String address;
 
-    public student(int studentId, String name, LocalDate BirthDaY) {
+    public student(int studentId, String name, String address) {
         this.studentId = studentId;
         this.name = name;
-        this.BirthDaY = BirthDaY;
+        this.address = address;
     }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+    
+
+   
 
     public int getStudentId() {
         return studentId;
